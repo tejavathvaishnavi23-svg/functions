@@ -71,3 +71,21 @@ def distinct_list(lst):
     return new_list
 print(distinct_list([1,2,3,4,5,6,7,8,9]))
 
+#check whether a number is prime
+def test_prime(n):
+    if (n == 1):
+        return False
+    elif (n == 2):
+        return True
+    else:
+        for x in range(2,n):
+            if (n % x == 0):
+                return False
+        return True
+print(test_prime(5))
+
+#Print even numbers from a given list
+numbers = [1,2,3,4,5,6,7,8,9]
+for num in numbers:
+    if num % 2 == 0:
+        print(num)
